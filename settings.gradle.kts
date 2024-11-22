@@ -1,4 +1,4 @@
-rootProject.name = "keypleLessReaderNfcMobileLib"
+rootProject.name = "keyple-less-reader-nfcmobile-kmp-lib"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
@@ -34,11 +34,6 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
-        maven(url = "https://oss.sonatype.org/content/repositories/releases")
-        maven(url = "https://s01.oss.sonatype.org/content/repositories/releases")
-        maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
-        maven(url = "https://s01.oss.sonatype.org/content/repositories/snapshots")
-        maven(url = "https://nexus.coppernic.fr/repository/libs-release")
     }
 
     dependencies {

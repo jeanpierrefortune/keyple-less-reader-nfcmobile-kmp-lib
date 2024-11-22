@@ -29,9 +29,9 @@ jobs:
         run: |
           VERSION=${GITHUB_REF#refs/tags/}
           ./gradlew build test -Pversion=$VERSION dokkaHtml publish --info
-      - name: Prepare Javadoc locally
+      - name: Prepare Dokka doc locally
         working-directory: .
-        run: ./.github/scripts/prepare_javadoc.sh $(echo "${{ github.ref }}" | sed -e "s,^refs/tags/,,")
+        run: ./.github/scripts/prepare_dokkadoc.sh $(echo "${{ github.ref }}" | sed -e "s,^refs/tags/,,")
       - name: Deploy Dokka to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:

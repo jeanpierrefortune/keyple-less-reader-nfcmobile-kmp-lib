@@ -66,9 +66,6 @@ android {
     }
 }
 
-group = "org.eclipse.keyple.keypleless.reader.nfcmobile"
-version = "0.1.2"
-
 publishing {
     repositories {
         mavenLocal {

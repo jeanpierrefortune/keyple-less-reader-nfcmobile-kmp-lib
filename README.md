@@ -3,7 +3,7 @@
 ## Overview
 The **Keyple NFC Reader KMP Library** is a Kotlin Multiplatform implementation enabling NFC card communications across
 Android, iOS and desktop platforms. This library provides an abstraction layer for NFC communications, making it easier
-to develop cross-platform applications using Keyple.
+to develop cross-platform applications.
 
 ## Documentation & Contribution Guide
 Full documentation available at [keyple.org](https://keyple.org)

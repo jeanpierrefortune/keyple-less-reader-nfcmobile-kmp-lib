@@ -9,7 +9,7 @@ plugins {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(libs.versions.jdk.get().toInt())
 
     if (System.getProperty("os.name").lowercase().contains("mac")) {
         listOf(
@@ -30,7 +30,7 @@ kotlin {
 
     jvm {
         kotlin {
-            jvmToolchain(17)
+            jvmToolchain(libs.versions.jdk.get().toInt())
         }
     }
 
@@ -86,7 +86,7 @@ tasks {
                 includeNonPublic.set(false)
                 skipDeprecated.set(true)
                 reportUndocumented.set(true)
-                jdkVersion.set(17)
+                jdkVersion.set(libs.versions.jdk.get().toInt())
             }
         }
     }

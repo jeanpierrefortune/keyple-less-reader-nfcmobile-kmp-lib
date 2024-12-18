@@ -6,7 +6,7 @@ This content is produced and maintained by the Eclipse Keyple project.
  
 ## Supported platforms
 
-* Java 1.8
+* Java 17
 * Android 7.0 Nougat API Level 24
 
 ## Trademarks

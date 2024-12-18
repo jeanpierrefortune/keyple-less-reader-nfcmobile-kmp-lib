@@ -7,6 +7,7 @@ datetime = "0.6.0"
 kotlin = "2.0.21"
 kotlinxSerialization = "1.7.3"
 napier = "2.7.1"
+dokka = "1.9.10"
 jdk = "17"
 
 [libraries]
@@ -21,4 +22,4 @@ napier = { module = "io.github.aakira:napier", version.ref = "napier" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-dokka = { id = "org.jetbrains.dokka", version = "1.9.10" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }

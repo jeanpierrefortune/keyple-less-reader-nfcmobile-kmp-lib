@@ -15,13 +15,6 @@ Full documentation available at [keyple.org](https://keyple.org)
 - iOS (CoreNFC)
 - JVM 17+
 
-## Requirements
-
-- Kotlin 2.0.21
-- Kotlin Multiplatform
-- Android compileSdk 34
-- Android Gradle Plugin 8.6.1
-
 ## Build
 
 The code is built with **Gradle** and targets **Android**, **iOS**, and **JVM** platforms.

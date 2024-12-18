@@ -41,8 +41,6 @@ kotlin {
             implementation(libs.kotlinx.datetime)
             implementation(libs.kotlinx.serialization)
 
-            //implementation(libs.okio)
-
             api(libs.napier)
         }
 

@@ -32,6 +32,6 @@ SPDX-License-Identifier: EPL-2.0
    
 ## Third-party Content
 
-Napier (2.7.1)
+Napier
 * License: Apache 2.0 (https://github.com/AAkira/Napier/blob/master/LICENSE)
 * Project: https://github.com/AAkira/Napier

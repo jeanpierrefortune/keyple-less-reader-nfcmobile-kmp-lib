@@ -77,7 +77,7 @@ publishing {
 ///////////////////////////////////////////////////////////////////////////////
 tasks {
     dokkaHtml {
-        outputDirectory.set(buildDir.resolve("dokka"))
+        outputDirectory.set(layout.buildDirectory.dir("dokka"))
 
         dokkaSourceSets {
             configureEach {

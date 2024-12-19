@@ -3,6 +3,7 @@ name: Test KMP Library
 on:
   pull_request:
     branches: [ main ]
+  workflow_dispatch: # Triggered manually
 
 jobs:
   test:

@@ -3,6 +3,7 @@ name: Publish KMP Library
 on:
   push:
     branches: [ main ]
+  workflow_dispatch: # Triggered manually
 
 jobs:
   publish:

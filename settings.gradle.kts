@@ -1,4 +1,4 @@
-rootProject.name = "keyple-less-reader-nfcmobile-kmp-lib"
+rootProject.name = "keypleless-reader-nfcmobile-kmp-lib"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
@@ -37,10 +37,6 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.eclipse.keyple:keyple-gradle:0.+")
         classpath("com.diffplug.spotless:spotless-plugin-gradle:6.25.0")
-
-        classpath("javax.xml.bind:jaxb-api:2.3.1")
-        classpath("com.sun.xml.bind:jaxb-impl:2.3.9")
     }
 }

@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.dokka)
-    id("org.eclipse.keyple")
     id("com.diffplug.spotless")
     id("maven-publish")
 }

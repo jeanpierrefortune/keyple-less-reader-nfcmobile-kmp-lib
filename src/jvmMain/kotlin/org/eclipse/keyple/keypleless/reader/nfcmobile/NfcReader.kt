@@ -83,8 +83,10 @@ actual class LocalNfcReader(val readerNameFilter: String = "*") {
     Napier.d(tag = TAG, message = "Card closed")
   }
 
+  @OptIn(ExperimentalStdlibApi::class)
   actual fun getPowerOnData(): String {
-    return ""
+    val res = card?.atr?.bytes?.toHexString()
+    return res ?: ""
   }
 
   @OptIn(ExperimentalStdlibApi::class)

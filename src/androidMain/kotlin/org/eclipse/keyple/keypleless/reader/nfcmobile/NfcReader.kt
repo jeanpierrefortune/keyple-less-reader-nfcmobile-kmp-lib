@@ -134,7 +134,7 @@ actual class LocalNfcReader(private val activity: Activity) {
   }
 
   actual fun getPowerOnData(): String {
-    return ""
+    return "Unavailable"
   }
 
   @OptIn(ExperimentalStdlibApi::class)

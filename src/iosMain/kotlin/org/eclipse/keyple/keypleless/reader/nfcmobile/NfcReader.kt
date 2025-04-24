@@ -179,14 +179,11 @@ actual class LocalNfcReader(private val getErrorMsg: (e: Exception) -> String) {
   }
 
   actual fun getPowerOnData(): String {
-    return ""
+    return "Unavailable"
   }
 
   @OptIn(ExperimentalStdlibApi::class)
   actual fun transmitApdu(commandApdu: ByteArray): ByteArray {
-    // TODO: manage IO errors!
-    Napier.d(tag = TAG, message = "-- APDU:")
-    Napier.d(tag = TAG, message = "----> ${commandApdu.toHexString()}")
     val card = ReaderInstance.getCard()!!
     val apduData = commandApdu.toNSData()
     val isoApdu = NFCISO7816APDU(apduData)
@@ -212,6 +209,8 @@ fun NSData.toByteArray(): ByteArray =
 internal class NfcTag(private val tag: NFCISO7816TagProtocol) {
   // this call happens on a random thread (coroutine default dispatcher)
   suspend fun sendCommand(isoApdu: NFCISO7816APDU): ByteArray = suspendCoroutine { cont ->
+    Napier.d(tag = TAG, message = "-- APDU:")
+    Napier.d(tag = TAG, message = "----> ${commandApdu.toHexString()}")
     // this callback happens on the NFC_WORKER_QUEUE thread
     val onCommandResult = { data: NSData?, sw1: uint8_t, sw2: uint8_t, error: NSError? ->
       if (error != null) {
